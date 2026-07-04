@@ -459,3 +459,69 @@ footer {
   /* margin-bottom: 0.5rem; */
 
 }
+
+
+@media (max-width: 768px) {
+
+  /* HERO en una sola columna y sin espacio extra */
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  /* Permitir reordenar elementos internos */
+  .hero-left,
+  .hero-right {
+    display: contents;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Logo */
+  .hero-logo {
+    order: 1;
+    margin: 0;
+  }
+
+  /* Título */
+  .hero-title {
+    order: 2;
+    margin: 0;
+  }
+
+  /* PH14 */
+  .hero-title span {
+    order: 3;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* IMAGEN DEL FRASCO — entre PH14 y subtítulo */
+  .hero-product-img {
+    order: 4;
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;      /* sin espacio arriba */
+    margin-bottom: 0;   /* sin espacio abajo */
+    padding: 0;
+  }
+
+  /* Subtítulo */
+  .hero-subtitle {
+    order: 5;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding: 0;
+  }
+
+  /* Botones */
+  .hero-actions {
+    order: 6;
+    margin-top: 0.5rem;
+  }
+}
