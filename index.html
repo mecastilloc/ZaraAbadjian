@@ -18,50 +18,60 @@
 <header>
   <nav class="nav">
 
-    <div class="logo-area">
-      <img src="img/vikut-logo.png" alt="Vikút Logo" class="logo-img">
-    </div>
+  <!-- IZQUIERDA -->
+  <div class="logo-area">
+    <img src="img/vikut-logo.png" alt="Vikút Logo">
+  </div>
 
-    <!-- BLOQUE ES -->
-    <div class="nav-links" data-lang="es">
-      <a href="#home-es">Inicio</a>
-      <a href="#producto-es">Producto</a>
-      <a href="#beneficios-es">Beneficios</a>
-      <a href="#uso-es">Aplicación</a>
-      <a href="#evidencia-es">Evidencia</a>
-      <a href="#experiencias-es">Casos</a>
-      <a href="#registro-es">Registros</a>
-      <a href="#faq-es">FAQs</a>
-      <a href="#publicaciones-es">Publicaciones</a>
-    </div>
+  <!-- DERECHA -->
+  <div class="nav-right">
+    <button id="lang-toggle" class="lang-btn">ES</button>
 
-    <!-- BLOQUE EN -->
-    <div class="nav-links" data-lang="en">
-      <a href="#home-en">Home</a>
-      <a href="#producto-en">Product</a>
-      <a href="#beneficios-en">Benefits</a>
-      <a href="#uso-en">How to Use</a>
-      <a href="#evidencia-en">Clinical Evidence</a>
-      <a href="#experiencias-en">Testimonials</a>
-      <a href="#registro-en">Registration</a>
-      <a href="#faq-en">FAQs</a>
-      <a href="#publicaciones-en">Papers</a>
-    </div>
-
-    <!-- BOTÓN DE IDIOMA -->
-    <button id="lang-toggle" class="lang-btn">EN</button>
-
+    <button class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
   </nav>
+
+  
+
+
+
 </header>
 
-<section id="home-es" data-lang="es"></section>
-<section id="home-en" data-lang="en"></section>
+<!-- MENÚ ES -->
+  <div class="nav-links" data-lang="es">
+    <a onclick="scrollToSection('home-es')">Inicio</a>
+    <a onclick="scrollToSection('producto-es')">Producto</a>
+    <a onclick="scrollToSection('beneficios-es')">Beneficios</a>
+    <a onclick="scrollToSection('uso-es')">Aplicación</a>
+    <a onclick="scrollToSection('evidencia-es')">Evidencia</a>
+    <a onclick="scrollToSection('experiencias-es')">Casos</a>
+    <a onclick="scrollToSection('registro-es')">Registros</a>
+    <!-- <a onclick="scrollToSection('faq-es')">FAQs</a> -->
+    <a onclick="scrollToSection('publicaciones-es')">Publicaciones</a>
+  </div>
+
+  <!-- MENÚ EN -->
+  <div class="nav-links" data-lang="en">
+    <a onclick="scrollToSection('home-en')">Home</a>
+    <a onclick="scrollToSection('producto-en')">Product</a>
+    <a onclick="scrollToSection('beneficios-en')">Benefits</a>
+    <a onclick="scrollToSection('uso-en')">How to Use</a>
+    <a onclick="scrollToSection('evidencia-en')">Clinical Evidence</a>
+    <a onclick="scrollToSection('experiencias-en')">Testimonials</a>
+    <a onclick="scrollToSection('registro-en')">Registration</a>
+    <!-- <a onclick="scrollToSection('faq-en')">FAQs</a> -->
+    <a onclick="scrollToSection('publicaciones-en')">Papers</a>
+  </div>
 
 
 
 <!-- =========================== HERO ========================= -->
 <!-- ========================================================== -->
-<section id="hero">
+<section id="hero" >
 
 <!-- ======================== BLOQUE ES ======================= -->
   <div data-lang="es" id="home-es">
@@ -75,12 +85,12 @@
         </h1>
 
         <p class="hero-subtitle">
-          <span>Solución antiséptica y astringente</span> ideal para pacientes diabéticos.
-          Desinfecta y regenera heridas, raspones, úlceras y quemaduras.
+          <span>Solución antiséptica y astringente</span> ideal para pacientes diabéticos, tratamiento de 
+          heridas superficiales y profundas, regeneración de piel.
         </p>
 
         <div class="hero-actions">
-          <button class="btn btn-primary" onclick="scrollToSection('beneficios-es')">Ver beneficios</button>
+          <button class="btn btn-primary" onclick="scrollToSection('beneficios-es')">Beneficios</button>
           <button class="btn btn-secondary" onclick="scrollToSection('uso-es')">Aplicación</button>
           <button class="btn btn-secondary" onclick="scrollToSection('evidencia-es')">Evidencia</button>
           <button class="btn btn-secondary" onclick="scrollToSection('experiencias-es')">Casos</button>
@@ -112,7 +122,7 @@
         </p>
 
         <div class="hero-actions">
-          <button class="btn btn-primary" onclick="scrollToSection('beneficios-en')">See benefits</button>
+          <button class="btn btn-primary" onclick="scrollToSection('beneficios-en')">Benefits</button>
           <button class="btn btn-secondary" onclick="scrollToSection('uso-en')">How to Use</button>
           <button class="btn btn-secondary" onclick="scrollToSection('evidencia-en')">Evidence</button>
           <button class="btn btn-secondary" onclick="scrollToSection('experiencias-en')">Testimonials</button>
@@ -1008,7 +1018,7 @@
             <h2 class="section-title">Registro Sanitario</h2>
 
             <div class="card registro-card">
-                <h2 class="registro-title">COFPRIS</h2>
+                <h2 class="registro-title">COFEPRIS</h2>
                 <p class="registro-info">
                 Registro Sanitario <span>No. 2179C2018 SSA</span>
                 <br>
@@ -1064,7 +1074,7 @@
             <h2 class="section-title">Registry</h2>
 
             <div class="card registro-card">
-                <h2 class="registro-title">COFPRIS</h2>
+                <h2 class="registro-title">COFEPRIS</h2>
                 <p class="registro-info">
                Sanitary Registration <span>No. 2179C2018 SSA</span>
                 <br>
@@ -1119,7 +1129,7 @@
 <!-- =========================================================== -->
 
 <!-- ======================== BLOQUE ES ======================== -->
-    <div data-lang="es">
+    <!-- <div data-lang="es">
 
         <section id="faq-es" class="section">
         <h2 class="section-title">Preguntas Frecuentes</h2>
@@ -1144,10 +1154,10 @@
             <div class="faq-answer">No, Vikút® permite terapia en seco sin apósitos.</div>
         </div>
         </section>
-    </div>  
+    </div>   -->
 
 <!-- ======================== BLOQUE EN ======================== -->
-    <div data-lang="en">
+    <!-- <div data-lang="en">
   
         <section id="faq-en" class="section">
         <h2 class="section-title">Frequently Asked Questions</h2>
@@ -1172,7 +1182,7 @@
             <div class="faq-answer">No, Vikút® allows dry therapy without dressings.</div>
         </div>
         </section>
-    </div>
+    </div> -->
 
 
 
@@ -1217,7 +1227,7 @@
                 </div>
                 
                 <div class="pub-box">
-                <h3 class="publicaciones-title">Frontiers InAnti-Infective Agents</h3>
+                <h3 class="publicaciones-title">Frontiers In Anti-Infective Agents</h3>
                 <img src="pdfs/FrontiersInAnti-InfectiveAgents.png" class="cover" alt="Frontiers InAnti-Infective Agents">
                 <a class="dbtn" href="pdfs/FrontiersInAnti-InfectiveAgents.pdf" target="_blank">Ver PDF</a>
                 </div>
@@ -1276,7 +1286,7 @@
                 </div>
                 
                 <div class="pub-box">
-                <h3 class="publicaciones-title">Frontiers InAnti-Infective Agents</h3>
+                <h3 class="publicaciones-title">Frontiers In Anti-Infective Agents</h3>
                 <img src="pdfs/FrontiersInAnti-InfectiveAgents.png" class="cover" alt="Frontiers InAnti-Infective Agents">
                 <a class="dbtn" href="pdfs/FrontiersInAnti-InfectiveAgents.pdf" target="_blank">Ver PDF</a>
                 </div>
@@ -1305,7 +1315,7 @@
     <footer id="footer-es" data-lang="es">
       <div class="footer-content">
         <img src="img/vikut-logo.png" alt="Vikút Logo" class="footer-logo">
-        <span class="logo-text">  Permanganato de Potasio PH14</span>
+        <span class="logo-text">  Permanganato de Potasio</span>
         <br>
         <span>© <span id="year"></span></span>
       </div>
@@ -1315,7 +1325,7 @@
     <footer id="footer-en" data-lang="en">
       <div class="footer-content">
         <img src="img/vikut-logo.png" alt="Vikút Logo" class="footer-logo">
-        <span class="logo-text">  Potassium Permanganate PH14</span>
+        <span class="logo-text">  Potassium Permanganate</span>
         <br>
         <span>© <span id="year-en"></span></span>
       </div>
@@ -1323,7 +1333,6 @@
 
 
 <script src="script.js"></script>
-
 </body>
 </html>
 
