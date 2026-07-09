@@ -257,11 +257,10 @@ header {
   h2, h3, h4 {
     margin-top: 0.2rem !important;
     margin-bottom: 0.2rem !important;
-
- .mockup-3d {
-    margin-bottom: 0.2rem;
-    }
   }
+  .mockup-3d {
+    margin-bottom: 0.5rem;
+   }
 }
 
 
