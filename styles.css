@@ -258,9 +258,14 @@ header {
     margin-top: 0.2rem !important;
     margin-bottom: 0.2rem !important;
   }
-  .mockup-img {
-    margin-bottom: 0.5rem;
-   }
+
+  .mockup-3d {
+    margin-bottom: 0.8rem; /* separa la imagen del subtítulo */
+  }
+
+  .product-sub {
+    margin-top: 0.5rem; /* opcional: más separación */
+  }
 }
 
 
