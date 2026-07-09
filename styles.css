@@ -232,7 +232,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;      /* sin espacio arriba */
-    margin-bottom: 0;   /* sin espacio abajo */
+    margin-bottom: 0.5rem;   /* sin espacio abajo */
     padding: 0;
   }
 
