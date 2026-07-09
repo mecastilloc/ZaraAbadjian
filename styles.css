@@ -260,11 +260,11 @@ header {
   }
 
   .mockup-3d {
-    margin-bottom: 1rem; /* separa la imagen del subtítulo */
+    margin-bottom: 2rem; /* separa la imagen del subtítulo */
   }
 
   .product-sub {
-    margin-top: 1rem; /* opcional: más separación */
+    margin-top: 2rem; /* opcional: más separación */
   }
 }
 
