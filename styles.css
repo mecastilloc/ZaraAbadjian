@@ -232,7 +232,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;      /* sin espacio arriba */
-    margin-bottom: 0.5rem;   /* sin espacio abajo */
+    margin-bottom: 0;   /* sin espacio abajo */
     padding: 0;
   }
 
@@ -257,6 +257,10 @@ header {
   h2, h3, h4 {
     margin-top: 0.2rem !important;
     margin-bottom: 0.2rem !important;
+
+ .mockup-3d {
+    margin-bottom: 0.2rem;
+    }
   }
 }
 
